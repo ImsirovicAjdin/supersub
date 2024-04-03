@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-family-sans-serif">
+    <h1>Welcome to SuperSub🎯</h1>
+    <p>SuperSub🎯 is an opinionated front-end framework (component library? UI kit?) being built by A. Imsirovic.</p>
+    <p>The framework's first commit was pushed on April 4, 2024.</p>
+    <br>
+    <h2>
+        Examples
+    </h2>
+    <div class="card minimalistic">
+      <h2>Large Card Title</h2>
+      <p>This is the content of the large card.</p>
+    </div>
+
+    <div class="card ornamental">
+      <h2>Small Card Title</h2>
+      <p>This is the content of the small card.</p>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-toggle">Dropdown</button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+      </ul>
+    </div>
+    <script>
+      function toggleDropdown() {
+        var dropdownMenu = document.querySelector(".dropdown-menu");
+        dropdownMenu.style.display =
+          dropdownMenu.style.display === "block" ? "none" : "block";
+      }
+
+      // Add event listener to toggle dropdown on button click
+      document.querySelector(".dropdown-toggle").addEventListener("click", toggleDropdown);
+    </script>
+  </body>
+</html>

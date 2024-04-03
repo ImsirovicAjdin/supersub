@@ -1,0 +1,76 @@
+/* Utility classes */
+.font-family-sans-serif, .minimalistic {
+  font-family: sans-serif;
+}
+
+.font-family-serif, .ornamental {
+  font-family: serif;
+}
+
+.font-size-20px, .card.flavor-large, .flavor-large.minimalistic, .flavor-large.ornamental, .minimalistic {
+  font-size: 20px;
+}
+
+.font-size-16px, .card.flavor-small, .flavor-small.minimalistic, .flavor-small.ornamental, .ornamental {
+  font-size: 16px;
+}
+
+.color-000, .minimalistic {
+  color: #000000;
+}
+
+.color-333, .ornamental {
+  color: #333333;
+}
+
+.background-color-f5f5f5, .minimalistic {
+  background-color: #f5f5f5;
+}
+
+.background-color-ffd700, .ornamental {
+  background-color: #ffd700;
+}
+
+.box-shadow-0-4px-8px-rgba-0-0-0-0-1, .card, .ornamental, .minimalistic {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.padding-20px, .card, .ornamental, .minimalistic {
+  padding: 20px;
+}
+
+.border-radius-8px, .card, .ornamental, .minimalistic {
+  border-radius: 8px;
+}
+
+.border-radius-6px, .card.flavor-small, .flavor-small.minimalistic, .flavor-small.ornamental {
+  border-radius: 6px;
+}
+
+.margin-0, .card h2, .minimalistic h2, .ornamental h2,
+.card p,
+.minimalistic p,
+.ornamental p {
+  margin: 0;
+}
+
+.margin-bottom-10px, .card h2, .minimalistic h2, .ornamental h2 {
+  margin-bottom: 10px;
+}
+
+.line-height-1-6, .card.flavor-large, .flavor-large.minimalistic, .flavor-large.ornamental {
+  line-height: 1.6;
+}
+
+.line-height-1-4, .card.flavor-small, .flavor-small.minimalistic, .flavor-small.ornamental {
+  line-height: 1.4;
+}
+
+.border-radius-12px, .card.flavor-large, .flavor-large.minimalistic, .flavor-large.ornamental {
+  border-radius: 12px;
+}
+
+/* card.scss */
+/* Flavor-specific styles */
+
+/*# sourceMappingURL=style.css.map */

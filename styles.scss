@@ -1,0 +1,115 @@
+// Utility classes
+.font-family-sans-serif { font-family: sans-serif }
+.font-family-serif { font-family: serif }
+.font-size-20px { font-size: 20px }
+.font-size-16px { font-size: 16px }
+.color-000 { color: #000000 }
+.color-333 { color: #333333 }
+.background-color-f5f5f5 { background-color: #f5f5f5 }
+.background-color-ffd700 { background-color: #ffd700 }
+.box-shadow-0-4px-8px-rgba-0-0-0-0-1 { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) }
+.padding-20px { padding: 20px }
+.border-radius-8px { border-radius: 8px }
+.border-radius-6px { border-radius: 6px }
+.margin-0 { margin: 0 }
+.margin-bottom-10px { margin-bottom: 10px }
+.line-height-1-6 { line-height: 1.6 }
+.line-height-1-4 { line-height: 1.4 }
+.border-radius-12px { border-radius: 12px }
+.font-size-16px { font-size: 16px }
+.color-black { color: #000 }
+.bg-clean { background-color: #f5f5f5 }
+.border-1px-solid { border: 1px solid #ccc }
+.padding-8px-12px { padding: 8px 12px }
+.cursor-pointer { cursor: pointer }
+
+// Extend utility classes to create .button-style
+.button-style {
+  @extend .font-size-16px;
+  @extend .color-black;
+  @extend .bg-clean;
+  @extend .border-1px-solid;
+  @extend .padding-8px-12px;
+  @extend .cursor-pointer;
+}
+
+/* card.scss */
+.card {
+  @extend .padding-20px;
+  @extend .border-radius-8px;
+  @extend .box-shadow-0-4px-8px-rgba-0-0-0-0-1;
+}
+
+.minimalistic {
+  @extend .card;
+  @extend .font-family-sans-serif;
+  @extend .font-size-20px;
+  @extend .color-000;
+  @extend .background-color-f5f5f5;
+}
+
+.ornamental {
+  @extend .card;
+  @extend .font-family-serif;
+  @extend .font-size-16px;
+  @extend .color-333;
+  @extend .background-color-ffd700;
+  @extend .box-shadow-0-4px-8px-rgba-0-0-0-0-1;
+}
+
+.card h2,
+.card p {
+  @extend .margin-0;
+}
+
+.card h2 {
+  @extend .margin-bottom-10px;
+}
+
+/* Flavor-specific styles */
+.card.flavor-large {
+  @extend .font-size-20px;
+  @extend .line-height-1-6;
+  @extend .border-radius-12px;
+}
+
+.card.flavor-small {
+  @extend .font-size-16px;
+  @extend .line-height-1-4;
+  @extend .border-radius-6px;
+}
+
+// dropdown
+// Utility classes for dropdown
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 0;
+}
+
+
+.dropdown-toggle {
+  @extend .button-style;
+}
+
+.dropdown-menu {
+  @extend .dropdown-menu-style !optional
+}
+
+.dropdown-menu li {
+  @extend .padding-20px;
+}
+
+// .dropdown-toggle:hover + .dropdown-menu,
+// .dropdown-menu:hover {
+//   display: block;
+// }

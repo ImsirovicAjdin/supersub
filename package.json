@@ -1,0 +1,14 @@
+{
+  "name": "supersub",
+  "version": "1.0.0",
+  "description": "CSS framework and philosophy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ajdin Imsirovic",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.72.0"
+  }
+}
